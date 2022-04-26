@@ -1,0 +1,170 @@
+.body-container {
+    height: 90vh;
+    background-image: url(../images/air.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.overlay {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: black;
+    height: 100%;
+    width: 40%;
+    opacity: .6;
+    z-index: -1;
+}
+
+.overlay-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 70%;
+}
+
+
+
+.fdest {
+    flex: 100%;
+    color: white;
+    margin: 10px;
+}
+
+
+.checks {
+    flex: 100%;
+    display: flex;
+    color: white;
+    margin: 10px;
+}
+
+.checkin,
+.checkout {
+    flex: 1;
+}
+
+.checkout {
+    margin-left: 20px;
+}
+
+.checkin {
+    margin-right: 20px;
+}
+
+
+.checkin input {
+    width: 100%;
+}
+
+.checkout input {
+    width: 100%;
+}
+
+.checks2 {
+    display: flex;
+    flex-direction: row;
+    flex: 100%;
+    justify-content: space-between;
+    color: white;
+    margin: 10px;
+}
+
+.contHotel {
+    display: flex;
+
+}
+
+.contPeople {
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+}
+
+
+.adult,
+.children {
+    margin-left: 15px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.destination {
+    font-size: 24px;
+}
+
+.inpHotel {
+    width: 90%;
+    margin-right: 20px;
+
+}
+
+.destination input {
+    width: 100%;
+}
+
+input[type="number"] {
+    width: 90%;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="number"] {
+    border-radius: 5px;
+    color: black;
+    height: 30px;
+    margin-top: 10px;
+    background-color: #DEE7EA;
+    font-size: 15px;
+    outline: none;
+}
+
+input[type="date"] {
+    text-align: center;
+}
+
+.form-info {
+    color: white;
+    width: 70%;
+    font-family: Medium;
+    font-size: 16px;
+}
+
+
+.form-info h1 {
+    font-size: 52px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.form-info h2 {
+    font-size: 32px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.sub {
+    flex: 100%;
+    margin: 10px;
+}
+
+.btnSearch {
+    background-color: #517710;
+    width: 100%;
+    border-color: #517710;
+    color: #ffffff;
+    text-align: center;
+    margin-top: 6px;
+    padding: 9px 16px;
+    border-radius: 5px;
+
+}
+
+.btnSearch:hover {
+    cursor: pointer;
+}
+
+.info {
+    height: 100vh;
+    background-color: #F1F1F1;
+}
