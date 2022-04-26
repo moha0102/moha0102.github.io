@@ -17,6 +17,7 @@
     z-index: -1;
 }
 
+
 .overlay-wrapper {
     display: flex;
     flex-direction: row;
@@ -167,4 +168,10 @@ input[type="date"] {
 .info {
     height: 100vh;
     background-color: #F1F1F1;
+}
+
+
+.autocomplete:hover {
+    opacity: .5;
+    cursor: pointer;
 }
