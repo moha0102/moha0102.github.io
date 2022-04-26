@@ -34,8 +34,8 @@ body {
 
 .sub-menu .menu {
     display: flex;
-    justify-content: space-evenly;
-    width: 70%;
+    justify-content: space-between;
+    width: 45%;
 }
 
 .sub-menu .menu a:hover {
