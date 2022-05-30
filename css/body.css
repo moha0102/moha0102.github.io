@@ -144,21 +144,14 @@ input[type="date"] {
     font-family: 'Times New Roman', Times, serif;
 }
 
-.sub {
-    flex: 100%;
-    margin: 10px;
-}
-
 .btnSearch {
     background-color: #517710;
-    width: 100%;
     border-color: #517710;
     color: #ffffff;
     text-align: center;
     margin-top: 6px;
     padding: 9px 16px;
-    border-radius: 5px;
-
+    border-radius: 5px
 }
 
 .btnSearch:hover {
@@ -166,7 +159,6 @@ input[type="date"] {
 }
 
 .info {
-    height: 100vh;
     background-color: #F1F1F1;
 }
 
