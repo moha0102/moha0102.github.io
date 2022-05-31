@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="css/header.css">
+        <link rel="stylesheet" href="css/body.css">
+        <link rel="stylesheet" href="css/footer.css">
+        <link rel="stylesheet" href="css/table.css">
+        <link rel="stylesheet" type="text/css"
+            href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script
+            src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    </head>
+    <body>
+        <div class="wrap">
+            <div class="header">
+                <div class="header-wrapper">
+                    <div class="logo">
+                        <img src="images/ident.svg">
+                    </div>
+
+                    <div class="nav-menu">
+                        <ul>
+                            <li>
+                                <a href="index.html">
+                                    <div class="icon">
+                                        <i class="fa fa-home"
+                                            aria-hidden="true"></i>
+                                    </div>
+                                    <div class="name"><span data-text="Hjem">Hjem</span></div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="icon">
+                                        <i class="fa fa-plane"
+                                            aria-hidden="true"></i>
+                                    </div>
+                                    <div class="name"><span
+                                            data-text="Destinasjon">Destinasjon</span></div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="reise.html">
+                                    <div class="icon">
+                                        <i class="fa fa-globe"
+                                            aria-hidden="true"></i>
+                                    </div>
+                                    <div class="name"><span
+                                            data-text="Mine Reiser">Mine Reiser</span></div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="kontakt.html">
+
+                                    <div class="icon">
+                                        <i class="fa fa-info"
+                                            aria-hidden="true"></i>
+                                    </div>
+                                    <div class="name"><span
+                                            data-text="Kontaktinformasjon">Kontaktinformasjon</span></div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tabellInfo">
+                <div class="OBS">
+                    <h1>OBS! Du har ingen valgte reiser! Vennligst fyll ut skjema her: <a href="index.html">Hjem</a></h1>
+                </div>
+                <div class="table-wrap">
+                    <table class="table">
+                    <thead class="thead-primary">
+                    <tr>
+                    <th>#</th>
+                    <th>Avgang</th>
+                    <th>Ankomst</th>
+                    <th>Detaljer</th>
+                    <th>Voksne</th>
+                    <th>Barn</th>
+                    <th>Pris</th>
+                    <th>Velg Reise</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                    <th scope="row">1</th>
+                    <td class="avgang"></td>
+                    <td class="ankomst"></td>
+                    <td class="Detaljer"></td>
+                    <td class="voksne"></td>
+                    <td class="barn"></td>
+                    <td class="pris">590,-</td>
+                    <td><button class="btn"onclick="slett()">Velg</button></td>
+                    </tr>
+                    <tr>
+                    <th scope="row">2</th>
+                    <td class="avgang"></td>
+                    <td class="ankomst"></td>
+                    <td class="Detaljer"></td>
+                    <td class="voksne"></td>
+                    <td class="barn"></td>
+                    <td class="pris">590,-</td>
+                    <td><button class="btn"onclick="slett()">Velg</button></td>
+                    </tr>
+                    <tr>
+                    <th scope="row">3</th>
+                    <td class="avgang"></td>
+                    <td class="ankomst"></td>
+                    <td class="Detaljer"></td>
+                    <td class="voksne"></td>
+                    <td class="barn"></td>
+                    <td class="pris">590,-</td>
+                    <td><button class="btn"onclick="slett()">Velg</button></td>
+                    </tr>
+                    </tbody>
+                    </table>
+                    </div>
+            </div>
+
+            </div>
+
+            <footer class="footer-distributed">
+
+                <div class="footer-right">
+
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                    <a href="#"><i class="fa fa-linkedin"></i></a>
+                    <a href="#"><i class="fa fa-github"></i></a>
+
+                </div>
+
+                <div class="footer-left">
+
+                    <p class="footer-links">
+                        <a class="link-1" href="index.html">Hjem</a>
+                        <a href="#">Destinasjon</a>
+                        <a href="reise.html">Mine Reiser</a>
+                        <a href="kontakt.html">Kontaktinformasjon</a>
+                    </p>
+
+                    <p>Mohammad Visualisering &copy; 2022</p>
+                </div>
+
+            </footer>
+        </div>
+        <script src="js/main.js"></script>
+        <script src="js/carousel.js"></script>
+        <script>
+            let OBS = document.getElementsByClassName("OBS")[0];
+            let tableWrap = document.getElementsByClassName("table-wrap")[0];
+            let genKey = "";
+            window.onload = function() {
+                if (localStorage.getItem("inpDest") == null) {
+                    OBS.style.display = "block";
+                    tableWrap.style.display = "none";
+                } else {
+                    OBS.style.display = "none";
+                    tableWrap.style.display = "block";
+                }
+                let avgang;
+                let ankomst;
+                let detaljer;
+
+                for (i = 0; i < 3; i++) {
+                    avgang = document.getElementsByClassName("avgang")[i];
+                    ankomst = document.getElementsByClassName("ankomst")[i];
+                    detaljer = document.getElementsByClassName("Detaljer")[i];
+                    voksne = document.getElementsByClassName("voksne")[i];
+                    barn = document.getElementsByClassName("barn")[i];
+                    random1 = randomTime();
+                    random2 = randomTime();
+                    if (random1 < random2) {
+                        avgang.innerHTML += `<p style="font-size: 16px">${random1}</p>`;
+                        ankomst.innerHTML += `<p style="font-size: 16px">${random2}</p>`;
+                    } else {
+                        avgang.innerHTML += `<p style="font-size: 16px">${random2}</p>`;
+                        ankomst.innerHTML += `<p style="font-size: 16px">${random1}</p>`;
+                    }
+                    avgang.innerHTML+= `
+                    <p style="opacity: .7; font-size: 14px">Dato: ${localStorage.getItem("inpCheckin")}</p>
+                    `;
+                    avgang.innerHTML+= `
+                    <p style="opacity: .6; font-size: 14px">Fra: Oslo</p>
+                    `;
+                    ankomst.innerHTML+= `
+                    <p style="opacity: .6; font-size: 14px">Til: ${localStorage.getItem("inpDest")}</p>
+                    `;
+                    detaljer.innerHTML+= `
+                    <p style="font-size: 16px">Direkte</p>
+                    <p style="opacity: .6; font-size: 14px">Returdato: ${localStorage.getItem("inpCheckout")}</p>
+                    `;
+                    voksne.innerHTML+= `
+                    <p style="font-size: 14px"><strong>${localStorage.getItem("inpAdult")}</strong></p>
+                    `;
+                    barn.innerHTML+= `
+                    <p style="font-size: 14px"><strong>${localStorage.getItem("inpChildren")}</strong></p>
+                    `;
+                }
+            }
+
+            function slett() {
+                localStorage.setItem('adult', localStorage.getItem("inpAdult"))
+                localStorage.setItem('dest', localStorage.getItem("inpDest"))
+                localStorage.setItem('checkin', localStorage.getItem("inpCheckin"))
+                localStorage.setItem('checkout', localStorage.getItem("inpCheckout"))
+                localStorage.setItem('children', localStorage.getItem("inpChildren"))
+                localStorage.setItem('hotel', localStorage.getItem("inpHotel"))
+                for (i = 0; i <= 11; i++) {
+                    genKey += Math.floor(Math.random()*9+1);
+                }
+                localStorage.setItem('referanse', genKey);
+                localStorage.removeItem("inpAdult");
+                localStorage.removeItem("inpChildren");
+                localStorage.removeItem("inpDest");
+                localStorage.removeItem("inpHotel");
+                localStorage.removeItem("inpCheckin");
+                localStorage.removeItem("inpCheckout");
+                window.location.href="reise.html";
+            }
+
+            randomTime = () => {
+                hrs = Math.round(Math.random()*12);
+                mins = Math.round(Math.random()*60);    
+                var hFormat = (hrs<10 ? "0" : "");
+                var mFormat = (mins<10 ? "0" : "");
+                var amPm = (hrs<12 ? "AM" : "PM");
+                return String(hFormat+hrs+ ":" +mFormat+mins+ " " +amPm);
+            }
+        </script>
+    </body>
+</html>

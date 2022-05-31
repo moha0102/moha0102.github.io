@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<!-- saved from url=(0038)http://127.0.0.1:5500/destinasjon.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="./Document_files/header.css">
+        <link rel="stylesheet" href="./Document_files/body.css">
+        <link rel="stylesheet" href="./Document_files/footer.css">
+        <link rel="stylesheet" href="./Document_files/table.css">
+        <link rel="stylesheet" type="text/css" href="./Document_files/font-awesome.min.css">
+        <script src="./Document_files/jquery.min.js.last ned"></script>
+    </head>
+    <body cz-shortcut-listen="true">
+        <div class="wrap">
+            <div class="header">
+                <div class="header-wrapper">
+                    <div class="logo">
+                        <img src="./Document_files/ident.svg">
+                    </div>
+
+                    <div class="nav-menu">
+                        <ul>
+                            <li>
+                                <a href="http://127.0.0.1:5500/index.html">
+                                    <div class="icon">
+                                        <i class="fa fa-home" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="name"><span data-text="Hjem">Hjem</span></div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="http://127.0.0.1:5500/destinasjon.html#">
+                                    <div class="icon">
+                                        <i class="fa fa-plane" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="name"><span data-text="Destinasjon">Destinasjon</span></div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="http://127.0.0.1:5500/reise.html">
+                                    <div class="icon">
+                                        <i class="fa fa-globe" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="name"><span data-text="Mine Reiser">Mine Reiser</span></div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="http://127.0.0.1:5500/kontakt.html">
+
+                                    <div class="icon">
+                                        <i class="fa fa-info" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="name"><span data-text="Kontaktinformasjon">Kontaktinformasjon</span></div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tabellInfo">
+                <div class="OBS" style="display: none;">
+                    <h1>OBS! Du har ingen valgte reiser! Vennligst fyll ut skjema her: <a href="http://127.0.0.1:5500/index.html">Hjem</a></h1>
+                </div>
+                <div class="table-wrap" style="display: block;">
+                    <table class="table">
+                    <thead class="thead-primary">
+                    <tr>
+                    <th>#</th>
+                    <th>Avgang</th>
+                    <th>Ankomst</th>
+                    <th>Detaljer</th>
+                    <th>Voksne</th>
+                    <th>Barn</th>
+                    <th>Pris</th>
+                    <th>Velg Reise</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                    <th scope="row">1</th>
+                    <td class="avgang"><p style="font-size: 16px">03:06 AM</p>
+                    <p style="opacity: .7; font-size: 14px">Dato: 2022-05-01</p>
+                    
+                    <p style="opacity: .6; font-size: 14px">Fra: Oslo</p>
+                    </td>
+                    <td class="ankomst"><p style="font-size: 16px">05:42 AM</p>
+                    <p style="opacity: .6; font-size: 14px">Til: asdg</p>
+                    </td>
+                    <td class="Detaljer">
+                    <p style="font-size: 16px">Direkte</p>
+                    <p style="opacity: .6; font-size: 14px">Returdato: 2022-05-14</p>
+                    </td>
+                    <td class="voksne">
+                    <p style="font-size: 14px"><strong>1</strong></p>
+                    </td>
+                    <td class="barn">
+                    <p style="font-size: 14px"><strong>2</strong></p>
+                    </td>
+                    <td class="pris">590,-</td>
+                    <td><button class="btn" onclick="slett()">Velg</button></td>
+                    </tr>
+                    <tr>
+                    <th scope="row">2</th>
+                    <td class="avgang"><p style="font-size: 16px">02:07 AM</p>
+                    <p style="opacity: .7; font-size: 14px">Dato: 2022-05-01</p>
+                    
+                    <p style="opacity: .6; font-size: 14px">Fra: Oslo</p>
+                    </td>
+                    <td class="ankomst"><p style="font-size: 16px">06:19 AM</p>
+                    <p style="opacity: .6; font-size: 14px">Til: asdg</p>
+                    </td>
+                    <td class="Detaljer">
+                    <p style="font-size: 16px">Direkte</p>
+                    <p style="opacity: .6; font-size: 14px">Returdato: 2022-05-14</p>
+                    </td>
+                    <td class="voksne">
+                    <p style="font-size: 14px"><strong>1</strong></p>
+                    </td>
+                    <td class="barn">
+                    <p style="font-size: 14px"><strong>2</strong></p>
+                    </td>
+                    <td class="pris">590,-</td>
+                    <td><button class="btn" onclick="slett()">Velg</button></td>
+                    </tr>
+                    <tr>
+                    <th scope="row">3</th>
+                    <td class="avgang"><p style="font-size: 16px">02:56 AM</p>
+                    <p style="opacity: .7; font-size: 14px">Dato: 2022-05-01</p>
+                    
+                    <p style="opacity: .6; font-size: 14px">Fra: Oslo</p>
+                    </td>
+                    <td class="ankomst"><p style="font-size: 16px">04:51 AM</p>
+                    <p style="opacity: .6; font-size: 14px">Til: asdg</p>
+                    </td>
+                    <td class="Detaljer">
+                    <p style="font-size: 16px">Direkte</p>
+                    <p style="opacity: .6; font-size: 14px">Returdato: 2022-05-14</p>
+                    </td>
+                    <td class="voksne">
+                    <p style="font-size: 14px"><strong>1</strong></p>
+                    </td>
+                    <td class="barn">
+                    <p style="font-size: 14px"><strong>2</strong></p>
+                    </td>
+                    <td class="pris">590,-</td>
+                    <td><button class="btn" onclick="slett()">Velg</button></td>
+                    </tr>
+                    </tbody>
+                    </table>
+                    </div>
+            </div>
+
+            </div>
+
+            <footer class="footer-distributed">
+
+                <div class="footer-right">
+
+                    <a href="http://127.0.0.1:5500/destinasjon.html#"><i class="fa fa-facebook"></i></a>
+                    <a href="http://127.0.0.1:5500/destinasjon.html#"><i class="fa fa-twitter"></i></a>
+                    <a href="http://127.0.0.1:5500/destinasjon.html#"><i class="fa fa-linkedin"></i></a>
+                    <a href="http://127.0.0.1:5500/destinasjon.html#"><i class="fa fa-github"></i></a>
+
+                </div>
+
+                <div class="footer-left">
+
+                    <p class="footer-links">
+                        <a class="link-1" href="http://127.0.0.1:5500/index.html">Hjem</a>
+                        <a href="http://127.0.0.1:5500/destinasjon.html#">Destinasjon</a>
+                        <a href="http://127.0.0.1:5500/reise.html">Mine Reiser</a>
+                        <a href="http://127.0.0.1:5500/kontakt.html">Kontaktinformasjon</a>
+                    </p>
+
+                    <p>Mohammad Visualisering © 2022</p>
+                </div>
+
+            </footer>
+        
+        <script src="./Document_files/main.js.last ned"></script>
+        <script src="./Document_files/carousel.js.last ned"></script>
+        <script src="./Document_files/open.js.last ned"></script>
+        <script>
+            let OBS = document.getElementsByClassName("OBS")[0];
+            let tableWrap = document.getElementsByClassName("table-wrap")[0];
+            let genKey = "";
+            window.onload = function() {
+                for (i = 0; i <= 11; i++) {
+                    genKey += Math.floor(Math.random()*9+1)
+                }
+                if (localStorage.getItem("inpDest") == null) {
+                    alert("rip")
+                }
+                let avgang;
+                let ankomst;
+                let detaljer;
+                if (localStorage.length > 0) {
+                    OBS.style.display = "none";
+                    tableWrap.style.display = "block";
+                } else {
+                    OBS.style.display = "block";
+                    tableWrap.style.display = "none";
+                }
+
+                for (i = 0; i < 3; i++) {
+                    avgang = document.getElementsByClassName("avgang")[i];
+                    ankomst = document.getElementsByClassName("ankomst")[i];
+                    detaljer = document.getElementsByClassName("Detaljer")[i];
+                    voksne = document.getElementsByClassName("voksne")[i];
+                    barn = document.getElementsByClassName("barn")[i];
+                    random1 = randomTime();
+                    random2 = randomTime();
+                    if (random1 < random2) {
+                        avgang.innerHTML += `<p style="font-size: 16px">${random1}</p>`
+                        ankomst.innerHTML += `<p style="font-size: 16px">${random2}</p>`
+                    } else {
+                        avgang.innerHTML += `<p style="font-size: 16px">${random2}</p>`
+                        ankomst.innerHTML += `<p style="font-size: 16px">${random1}</p>`
+                    }
+                    avgang.innerHTML+= `
+                    <p style="opacity: .7; font-size: 14px">Dato: ${localStorage.getItem("inpCheckin")}</p>
+                    `
+                    avgang.innerHTML+= `
+                    <p style="opacity: .6; font-size: 14px">Fra: Oslo</p>
+                    `
+                    ankomst.innerHTML+= `
+                    <p style="opacity: .6; font-size: 14px">Til: ${localStorage.getItem("inpDest")}</p>
+                    `
+                    detaljer.innerHTML+= `
+                    <p style="font-size: 16px">Direkte</p>
+                    <p style="opacity: .6; font-size: 14px">Returdato: ${localStorage.getItem("inpCheckout")}</p>
+                    `
+                    voksne.innerHTML+= `
+                    <p style="font-size: 14px"><strong>${localStorage.getItem("inpAdult")}</strong></p>
+                    `
+                    barn.innerHTML+= `
+                    <p style="font-size: 14px"><strong>${localStorage.getItem("inpChildren")}</strong></p>
+                    `
+                }
+            }
+
+            function slett() {
+                localStorage.removeItem("inpAdult")
+                localStorage.removeItem("inpChildren")
+                localStorage.removeItem("inpDest")
+                localStorage.removeItem("inpHotel")
+                localStorage.removeItem("inpCheckin")
+                localStorage.removeItem("inpCheckout")
+            }
+
+            randomTime = () => {
+                hrs = Math.round(Math.random()*12);
+                mins = Math.round(Math.random()*60);    
+                var hFormat = (hrs<10 ? "0" : "");
+                var mFormat = (mins<10 ? "0" : "");
+                var amPm = (hrs<12 ? "AM" : "PM");
+                return String(hFormat+hrs+ ":" +mFormat+mins+ " " +amPm);
+            }
+        </script>
+    <!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body></html>
