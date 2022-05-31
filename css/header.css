@@ -24,30 +24,6 @@ body {
     z-index: 1;
 }
 
-.sub-menu {
-    display: flex;
-    justify-content: flex-end;
-    width: 100%;
-    background-color: #003251;
-    color: white;
-}
-
-.sub-menu .menu {
-    display: flex;
-    justify-content: space-between;
-    width: 45%;
-}
-
-.sub-menu .menu a:hover {
-    opacity: .6;
-}
-
-.sub-menu .menu a {
-    color: white;
-    font-size: 16px;
-    opacity: 0.7;
-}
-
 .header-wrapper {
     display: flex;
     flex-basis: 80%;
